@@ -1,3 +1,7 @@
+*Note: this is a fork that modifies `agibot2lerobot/agibot_h5.py` to keep only videos from `observation.images.head`. Based on Agibot World's sample dataset, this reduces the dataset size by ~12x.*
+
+---
+
 # AgiBot-World to LeRobot
 
 AgiBot World, the first large-scale robotic learning dataset designed to advance multi-purpose robotic policies. It is accompanied by foundation models, benchmarks, and an ecosystem to democratize access to high-quality robot data for the academic community and the industry, paving the path towards the "ImageNet Moment" for Embodied AI. (Copied from [docs](https://agibot-world.com/))

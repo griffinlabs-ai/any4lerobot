@@ -1,3 +1,7 @@
+*Note: this is a fork that modifies `agibot2lerobot/agibot_h5.py` to keep only videos from `observation.images.head`. Based on Agibot World's sample dataset, this reduces the dataset size by ~12x.*
+
+---
+
 <h1 align="center">
     <p>Any4LeRobot: A tool collection for LeRobot</p>
 </h1>
