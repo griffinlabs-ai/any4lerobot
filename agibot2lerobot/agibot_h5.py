@@ -152,9 +152,10 @@ def save_as_lerobot_dataset(agibot_world_config, task: tuple[Path, Path], save_d
     if local_dir.exists():
         shutil.rmtree(local_dir)
 
+    use_image_feats = ('observation.images.head', 'observation.images.hand_left', 'observation.images.hand_right')
     for feat in list(features.keys()):
         if feat.startswith('observation.images'):
-            if feat != 'observation.images.head' and not (save_depth and feat == 'observation.images.head_depth'):
+            if feat not in use_image_feats and not (save_depth and feat == 'observation.images.head_depth'):
                 features.pop(feat)
 
     dataset: AgiBotDataset = AgiBotDataset.create(
